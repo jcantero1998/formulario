@@ -1,0 +1,87 @@
+/* Estilos generales */
+body{
+    font-family: Arial, Helvetica, sans-serif;  
+}
+h1,p{
+    text-align: center;
+}
+/* Estilos para el formulario */
+form{
+    max-width: 800px;
+    min-width: 800px;
+    margin: auto;
+    color: #7d2181;
+}
+fieldset {
+    padding: 20px;
+    width:90%;
+}
+#fieldsetfoto{
+    margin: 10px;
+    width: 95%;
+    padding: 0%;
+}
+legend{
+    font-weight: bold;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+#doscolumnas ul {
+    width: 100%;
+}
+#doscolumnas ul li {
+    width: 49%;
+    display: inline-block;
+}
+#doscolumnas ul li > * {
+    width: 90%;
+}
+.altura{
+    height: 30px;
+}
+.anchura{
+    width: 200px;
+}
+#participar{
+    width: 95%;
+}
+label,textarea,input,select{
+    margin: 10px;
+}
+.hover:hover {
+    background-color: #98249c69
+}
+#instruccionesselect{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 12px;
+}
+#interes{
+    height: 125px;
+    width: 200px;
+}
+a{
+    color: #882c8b;
+}
+a:hover {
+    color: #000000
+}
+/* Estilos para el boton */
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fbff00;
+    border: none;
+    border-radius: 15px;
+}
+.button:hover {
+    background-color: #e2e610
+    }
+.button:active {
+    background-color: #e2e610;
+    transform: translateY(4px);
+}

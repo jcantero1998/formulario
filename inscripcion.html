@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Inscripción</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form id="form" action="script.php" method="post"> 
+
+        <h1>Inscripción a las X Jornadas Matemáticas</h1>
+        <p>Los campos señalados con * son obligatorios</p>
+
+        <fieldset id="doscolumnas">
+           <legend>Datos Personales</legend>
+           <ul>
+            <li>
+                <label for="nombre">Nombre *</label>
+                <input class="altura hover" type="text" name="nombre" id="nombre" value="" required/>
+            </li>
+             <li>
+                <label for="apellidos">Apellidos *</label>
+                <input class="altura hover" type="text" name="apellidos" id="apellidos" value="" required/>
+            </li>
+             <li>
+                <label for="email">Correo electrónico *</label>
+                <input class="altura hover" type="email" name="email" id="email" value="" required placeholder="usuario@correo.com"/>
+            </li>
+             <li>
+                <label for="telefono">Teléfono *</label>
+                <input class="altura hover" type="tel" name="telefono" id="telefono" value="" required placeholder="123456789" maxlength="9" pattern="[0-9]{9}"/>
+            </li>
+        </ul>
+
+        <label for="foto">Fotografía para la acreditación</label><br>
+        <fieldset id="fieldsetfoto">
+            <input type="file" id="foto" name="foto">
+        </fieldset>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Perfil de participante</legend>
+            <label for="participar">¿Por ué estás pensando en participar?*</label>
+            <br>
+            <textarea class="hover" id="participar" name="participar" rows="8" required placeholder="Escriba una breve explicación..."></textarea>
+
+            <label for="actividad">Actividad profesional *</label>
+            <br>
+            <select class="altura anchura" name="actividad" id="actividad" required>
+                <option value="">Selecciona un valor</option>
+                <option value="estudiantebach">Estudiante de bachillerato</option>
+                <option value="estudianteuni">Estudiante universitario</option>
+                <option value="profbach">Profesor de bachillerato</option>
+                <option value="profuni">Profesor universitario</option>
+                <option value="otro">Otra actividad profesional</option>
+            </select>
+
+            <br><br>
+
+            <label for="interes">¿En qué talleres está interesado? *</label>
+            <br>
+            <p id="instruccionesselect">Para seleccionar más de una opción, presiona la tecla Ctrl (windows) o Command (Mac).</p>
+
+            <select name="interes" id="interes" multiple required>
+                <option value="encriptacion">La encriptación a lo largo de la historia</option>
+                <option value="seguridad">Seguridad informática</option>
+                <option value="redes">Redes sociales y teoría de grafos</option>
+                <option value="azar">Matemáticas y azar</option>
+                <option value="matematicas">Problemas matemáticos del milenio</option>
+                <option value="tiempo">La predicción del tiempo</option>
+                <option value="fractales">Fractales en el aula</option>
+            </select>
+
+            <br><br>
+            
+            <label for="interes">Seleccione una de las tres opciones siguientes: *</label>
+            <br><br>
+            <input type="radio" id="4y5mayo" name="gender" value="4y5mayo" required> 
+            <label for="4y5mayo">Asistiré los días 4 y 5 de mayo</label><br>
+            <input type="radio" id="4mayo" name="gender" value="4mayo" required>
+            <label for="4mayo">Asistiré solo el día 4 de mayo</label><br>
+            <input type="radio" id="5mayo" name="gender" value="5mayo" required>
+            <label for="5mayo">Asistiré solo el día 5 de mayo</label><br>
+
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" name="avisolegal" value="avisolegal" required>
+        <label>He leído y acepto la <a href="politica">política de privacidad</a>  y el <a href="aviso">aviso legal</a> *</label><br>
+        <input class="button" type="submit" value="ENVIAR">
+     </form>
+</body>
+</html>
